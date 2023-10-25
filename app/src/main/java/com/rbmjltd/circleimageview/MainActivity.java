@@ -16,9 +16,13 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
 
-
         circleImageView = findViewById(R.id.profile_image);
         circleImageView.setImageResource(R.drawable.profile);
 
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
     }
 }
